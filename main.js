@@ -25,33 +25,33 @@ document.getElementById("q0").classList.add("status-good");
 // 1. Declare a variable whose value is an empty array.
 //    Use any method you choose to add at least 4 items to it.
 
-// var activitylist[];
-// activitylist.push("cooking", "napping", "googling", "singing");
-// document.getElementById("q1").innerHTML = activitylist;
+var activitylist = [];
+activitylist.push("cooking", "napping", "googling", "singing");
+document.getElementById("q1").innerHTML = activitylist;
 
 
 
 
 // 2. Add an additional item to the beginning of your array.
 
-// activitylist.unshift("reading");
-// document.getElementById("q2").innerHTML = activitylist;
+activitylist.unshift("reading");
+document.getElementById("q2").innerHTML = activitylist;
 
 
 
 
 // 3. Remove the second and third items in your array.
 
-// activitylist.splice(1,2);
-// document.getElementById("q3").innerHTML = activitylist;
+activitylist.splice(1,2);
+document.getElementById("q3").innerHTML = activitylist;
 
 
 
 
 // 4. Add two new items after the second item.
 
-// activitylist.splice(1,0,"snacking", "laughing")
-// document.getElementById("q4").innerHTML = activitylist;
+activitylist.splice(1,0,"snacking", "laughing")
+document.getElementById("q4").innerHTML = activitylist;
 
 
 
@@ -59,8 +59,8 @@ document.getElementById("q0").classList.add("status-good");
 
 // 5. Log to the console: 'The current length of the array is....' using the .length method
 
-// document.getElementById("q5").innerHTML = activitylist.length;
-// console.log("The current length of the array is" + q5);
+document.getElementById("q5").innerHTML = activitylist.length;
+console.log("The current length of the array is" + activitylist.length);
 
 
 
@@ -70,16 +70,15 @@ var things = ['mug', 'book', 'mouse', 'plant', 'sunglasses'];
 // 6. Change 'mouse' to 'keyboard'
 
 
-// things.splice(2,1,"keyboard")
-// document.getElementById("q6").innerHTML = things;
+things.splice(2,1,"keyboard")
+document.getElementById("q6").innerHTML = things;
 
 
 // 7. Combine all of the elements of the array into a string.
 //    (Hint: check out the 'join' method.)
 
-// var allactivities = things.join();
-
-// document.getElementById("q7").innerHTML = allactivities;
+var allactivities = things.join();
+document.getElementById("q7").innerHTML = allactivities;
 
 
 
@@ -89,8 +88,8 @@ var things = ['mug', 'book', 'mouse', 'plant', 'sunglasses'];
 // 8. Remove the first item.
 
 
-// things.shift();
-// document.getElementById("q8a").innerHTML = things;
+things.shift();
+document.getElementById("q8a").innerHTML = things;
 
 
 
@@ -98,32 +97,32 @@ var things = ['mug', 'book', 'mouse', 'plant', 'sunglasses'];
 
 // 9. Remove all items from the things array.
 
-// var things = [];
-// document.getElementById("q9").innerHTML = things;
+var things = [];
+document.getElementById("q9").innerHTML = things;
 
 
 
 
 // Use the following array for question 10:
-// var people = ['Bill', 'Ted', 'Emily', 'Andrea', 'Doug'];
+var people = ['Bill', 'Ted', 'Emily', 'Andrea', 'Doug'];
 
 // 10. Arrange the items alphabetically. Store this Array as orderedPeople
 
-// people.sort();
-// var orderedPeople = people.slice();
-// document.getElementById("q10").innerHTML = orderedPeople;
+people.sort();
+var orderedPeople = people.slice();
+document.getElementById("q10").innerHTML = orderedPeople;
 
 
 
 
 // 11. Create an array of arrays with the following three arrays:
-// var array1 = ["Fido", "Spot", "Rex", "Sparky"]
-// var array2 = ["Bulldog", "Lab", "Dalmation", "Beagle"]
-// var array3 = ["White", "Black", "Spotted", "Tri-color"]
+var array1 = ["Fido", "Spot", "Rex", "Sparky"]
+var array2 = ["Bulldog", "Lab", "Dalmation", "Beagle"]
+var array3 = ["White", "Black", "Spotted", "Tri-color"]
 
-// var array4 = [array1, array2, array3];
+var array4 = [array1, array2, array3];
 
-// document.getElementById("q11").innerHTML = array4;
+document.getElementById("q11").innerHTML = array4;
 
 
 
@@ -132,7 +131,7 @@ var things = ['mug', 'book', 'mouse', 'plant', 'sunglasses'];
                 // ["Fido", "Spot", "Rex", "Sparky"],
                 // ["Bulldog", "Lab", "Dalmation", "Beagle"],
                 // ["White", "Black", "Spotted", "Tri-color"]
-              ]
+              // ]
 
 
 
@@ -143,9 +142,9 @@ var things = ['mug', 'book', 'mouse', 'plant', 'sunglasses'];
 // 12. Remove "Sparky" and "White" from the above array of arrays.
 
 
-// array4.splice(3, 1);
-// array4.splice(7, 1);
-// document.getElementById("q12").innerHTML = array4;
+array4.splice(3, 1);
+array4.splice(7, 1);
+document.getElementById("q12").innerHTML = array4;
 
 
 
@@ -156,24 +155,24 @@ var campingItems = ['tent', 'hiking boots', 'picnic table', 'corn on the cob', '
 
 // 13. Declare an array called lastItem using .pop() on the campingItems array.
 
-// var lastItem = [campingItems.pop()];
-// document.getElementById("q13").innerHTML = lastItem;
+var lastItem = [campingItems.pop()];
+document.getElementById("q13").innerHTML = lastItem;
 
 
 
 // 14. Add two new items to lastItem, one at the beginning and one at the end.
 
-// lastItem.unshift("bug spray");
-// lastItem.push("pillow");
-// document.getElementById("q14").innerHTML = lastItem;
+lastItem.unshift("bug spray");
+lastItem.push("pillow");
+document.getElementById("q14").innerHTML = lastItem;
 
 
 
 
 // 15. Add s'mores to the lastItem array.
 
-// lastItem.push("s'mores");
-// document.getElementById("q14").innerHTML = lastItem;
+lastItem.push("s'mores");
+document.getElementById("q15").innerHTML = lastItem;
 
 
 
@@ -181,28 +180,28 @@ var campingItems = ['tent', 'hiking boots', 'picnic table', 'corn on the cob', '
 // 16. Create a new Array called reversedItems.
 //    The items should be the same as lastItem, only in reverse order.
 
-// lastItem.sort();
-// var reversedItems = [lastItem.reverse()];
-// document.getElementById("q16").innerHTML = reversedItems;
+lastItem.sort();
+var reversedItems = [lastItem.reverse()];
+document.getElementById("q16").innerHTML = reversedItems;
 
 
 // 17. Using the Arrays below, create a single Array
 //     called numberPets whose value is [12, 5, 9, 27, 'fish', 'dog']
-// var firstArray = [12, 5, 9, 27];
-// var secondArray = ['fish', 'dog'];
+var firstArray = [12, 5, 9, 27];
+var secondArray = ['fish', 'dog'];
 
-// var numberPets = [firstArray, secondArray];
-// document.getElementById("q17").innerHTML = numberPets;
+var numberPets = [firstArray, secondArray];
+document.getElementById("q17").innerHTML = numberPets;
 
 
 // 18: Try to arrange the following items from smallest to largest:
-// var sortingNumbers = [2, 5, 98, 55, 77, 300];
+var sortingNumbers = [2, 5, 98, 55, 77, 300];
 // If it doesn't sort as expected, explain why.
-// sortingNumbers.sort(function(a, b) {
-  // return a - b
-// });
+sortingNumbers.sort(function(a, b) {
+  return a - b
+});
 
-// document.getElementById("message").innerHTML = sortingNumbers;
+document.getElementById("q18").innerHTML = sortingNumbers;
 
 
 
